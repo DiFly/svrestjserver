@@ -5,7 +5,6 @@ import org.difly.svrestjserver.model.UserPosition;
 import org.difly.svrestjserver.model.UserStatus;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Random;
 
 public class UserDetailsCreator {
@@ -20,16 +19,12 @@ public class UserDetailsCreator {
         user.setEmailwork(emailwork(user.getFirstname()+"."+user.getSurname()));
         user.setPhone(phone());
         user.setSkype(skype(user.getFirstname()));
+        user.setBirthday(birtday());
         user.setDatestart(datestart());
         user.setStatus(status());
-
         user.setDaysavailable(daysavailable());
 
         return user;
-    }
-
-    private int daysavailable() {
-        return new Random().nextInt(50);
     }
 
 
@@ -103,9 +98,17 @@ public class UserDetailsCreator {
     private String skype (String name) {
         return (name + ".skype");
     };
-    private LocalDate datestart () {
+
+    private LocalDate birtday() {
         long minDay = LocalDate.of(1970, 1, 1).toEpochDay();
         long maxDay = LocalDate.of(2005, 1, 1).toEpochDay();
+        long randomDay = (long) ((long) minDay + (Math.random() * (maxDay - minDay)));
+        return LocalDate.ofEpochDay(randomDay);
+    }
+
+    private LocalDate datestart () {
+        long minDay = LocalDate.of(2005, 1, 1).toEpochDay();
+        long maxDay = LocalDate.of(2020, 1, 1).toEpochDay();
         long randomDay = (long) ((long) minDay + (Math.random() * (maxDay - minDay)));
         return LocalDate.ofEpochDay(randomDay);
     };
@@ -121,7 +124,11 @@ public class UserDetailsCreator {
                 return UserStatus.Active;
         }
     };
+
+    private int daysavailable() {
+        return new Random().nextInt(50);
+    }
 //    private Date dateend;
 //    private Long teamId;
-//    private int daysavailable;
+
 }

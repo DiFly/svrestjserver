@@ -29,6 +29,7 @@ public class UserDetails {
     private @NonNull LocalDate datestart;
     private @NonNull UserStatus status;
     private LocalDate dateend;
+    private LocalDate birthday;
     private Long teamId;
     private int daysavailable;
 }
