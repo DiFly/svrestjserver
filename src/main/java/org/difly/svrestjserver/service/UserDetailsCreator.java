@@ -69,11 +69,20 @@ public class UserDetailsCreator {
                 "http://www.liketotally80s.com/wp-content/uploads/2014/08/tom-hanks-80s.png",
                 "https://upload.wikimedia.org/wikipedia/commons/b/b1/KeiraKnightleyByAndreaRaffin2011_%28cropped%29.jpg",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jessica_Alba_SDCC_2014.jpg/614px-Jessica_Alba_SDCC_2014.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dwayne_Johnson_2%2C_2013.jpg/800px-Dwayne_Johnson_2%2C_2013.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ward_Cunningham_-_Commons-1.jpg/220px-Ward_Cunningham_-_Commons-1.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/266px-Martin_Luther_King%2C_Jr..jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/9/91/Bill_Gates_1977.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Paul_Walker.jpg/170px-Paul_Walker.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/2/29/Jason_Statham_2012.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/3/33/Jeff_Bezos_2016.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/5/51/Warren_Buffett_KU_Visit.jpg",
                 "https://upload.wikimedia.org/wikipedia/commons/7/7a/Rachel_Stevens_in_Feb_2010_cropped.jpg"
 
         };
 
-        int x = new Random().nextInt(path.length -1);
+//        int x = new Random().nextInt(path.length -1);
+        int x = new Random().nextInt(path.length);
         return path[x];
     };
 
