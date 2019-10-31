@@ -1,4 +1,4 @@
-package org.difly.svrestjserver.controller;
+package org.difly.svrestjserver.controller.old;
 
 import org.difly.svrestjserver.model.UserDetails;
 import org.difly.svrestjserver.service.UserDetailsService;

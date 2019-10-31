@@ -1,4 +1,4 @@
-package org.difly.svrestjserver.controller;
+package org.difly.svrestjserver.controller.old;
 
 import org.difly.svrestjserver.model.User;
 import org.difly.svrestjserver.repository.UserRepository;
