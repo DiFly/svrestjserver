@@ -14,20 +14,20 @@ import java.time.LocalDate;
 @Table(name = "userdetails")
 @Data
 @NoArgsConstructor
-public class UserDetails {
+public class UserDetailsOld {
     @Id
     @GeneratedValue
     private Long id;
     private @NonNull String firstname;
     private @NonNull String surname;
-    private @NonNull UserPosition position;
+    private @NonNull UserPositionOld position;
     private String userpic;
     private @NonNull String emailself;
     private @NonNull String emailwork;
     private @NonNull String phone;
     private @NonNull String skype;
     private @NonNull LocalDate datestart;
-    private @NonNull UserStatus status;
+    private @NonNull UserStatusOld status;
     private LocalDate dateend;
     private LocalDate birthday;
     private Long teamId;

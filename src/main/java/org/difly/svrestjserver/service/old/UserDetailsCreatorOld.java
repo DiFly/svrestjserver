@@ -1,15 +1,15 @@
 package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.old.UserDetails;
-import org.difly.svrestjserver.model.old.UserPosition;
-import org.difly.svrestjserver.model.old.UserStatus;
+import org.difly.svrestjserver.model.old.UserDetailsOld;
+import org.difly.svrestjserver.model.old.UserPositionOld;
+import org.difly.svrestjserver.model.old.UserStatusOld;
 
 import java.time.LocalDate;
 import java.util.Random;
 
-public class UserDetailsCreator {
-    public UserDetails getUserDetails(){
-        UserDetails user = new UserDetails();
+public class UserDetailsCreatorOld {
+    public UserDetailsOld getUserDetails(){
+        UserDetailsOld user = new UserDetailsOld();
 
         user.setFirstname(firstname());
         user.setSurname(surname());
@@ -48,17 +48,17 @@ public class UserDetailsCreator {
         return str;
     }
 
-    private UserPosition userPosition () {
-        int x = new Random().nextInt(UserPosition.values().length);
+    private UserPositionOld userPosition () {
+        int x = new Random().nextInt(UserPositionOld.values().length);
         switch (x) {
             case 0:
-                return UserPosition.Admin;
+                return UserPositionOld.Admin;
             case 1:
-                return UserPosition.TeamLeader;
+                return UserPositionOld.TeamLeader;
             case 2:
-                return UserPosition.AccountManager;
+                return UserPositionOld.AccountManager;
             default:
-                return UserPosition.AccountManager;
+                return UserPositionOld.AccountManager;
         }
     }
 
@@ -122,15 +122,15 @@ public class UserDetailsCreator {
         return LocalDate.ofEpochDay(randomDay);
     };
 
-    private UserStatus status () {
-        int x = new Random().nextInt(UserStatus.values().length);
+    private UserStatusOld status () {
+        int x = new Random().nextInt(UserStatusOld.values().length);
         switch (x) {
             case 0:
-                return UserStatus.Active;
+                return UserStatusOld.Active;
             case 1:
-                return UserStatus.Dismiss;
+                return UserStatusOld.Dismiss;
             default:
-                return UserStatus.Active;
+                return UserStatusOld.Active;
         }
     };
 

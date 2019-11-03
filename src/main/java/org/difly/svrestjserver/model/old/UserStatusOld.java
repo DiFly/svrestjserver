@@ -1,5 +1,5 @@
 package org.difly.svrestjserver.model.old;
 
-public enum UserStatus {
+public enum UserStatusOld {
     Active, Dismiss
 }

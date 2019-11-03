@@ -1,7 +1,7 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.old.User;
-import org.difly.svrestjserver.repository.UserRepository;
+import org.difly.svrestjserver.model.old.UserOld;
+import org.difly.svrestjserver.repository.UserRepositoryOld;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,15 +10,15 @@ import java.util.stream.Collectors;
 
 @RestController
 public class UserController {
-    private UserRepository userRepository;
+    private UserRepositoryOld userRepositoryOld;
 
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public UserController(UserRepositoryOld userRepositoryOld) {
+        this.userRepositoryOld = userRepositoryOld;
     }
 
     @GetMapping("/user-list")
-    public List<User> userList() {
-        return userRepository
+    public List<UserOld> userList() {
+        return userRepositoryOld
                 .findAll()
                 .stream()
                 .collect(Collectors.toList());

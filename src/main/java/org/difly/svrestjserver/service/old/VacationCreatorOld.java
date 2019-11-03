@@ -1,15 +1,15 @@
 package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.old.Vacation;
+import org.difly.svrestjserver.model.old.VacationOld;
 
 import java.time.LocalDate;
 import java.util.Random;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
-public class VacationCreator {
-    public Vacation getVacation(long employeeId) {
-        Vacation vac = new Vacation();
+public class VacationCreatorOld {
+    public VacationOld getVacation(long employeeId) {
+        VacationOld vac = new VacationOld();
 
         vac.setEmployeeId(employeeId);
         vac.setStartDate(startDate());

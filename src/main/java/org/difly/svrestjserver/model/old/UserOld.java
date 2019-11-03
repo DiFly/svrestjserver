@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Table(name = "userauth")
 @Data
 @NoArgsConstructor
-public class User {
+public class UserOld {
     @Id
     @GeneratedValue
     private Long id;

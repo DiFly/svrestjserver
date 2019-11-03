@@ -1,7 +1,7 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.old.Vacation;
-import org.difly.svrestjserver.service.old.VacationService;
+import org.difly.svrestjserver.model.old.VacationOld;
+import org.difly.svrestjserver.service.old.VacationServiceOld;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,20 +15,20 @@ import java.util.UUID;
 @RestController
 public class VacationControllerOld {
     @Autowired
-    VacationService vacationService;
+    VacationServiceOld vacationServiceOld;
 
     @GetMapping("/vacations")
-    private List<Vacation> getAllVacation () {
-        return vacationService.getAllVacation();
+    private List<VacationOld> getAllVacation () {
+        return vacationServiceOld.getAllVacation();
     }
 
     @GetMapping("/vacations/{id}")
-    private Vacation getVacation (@PathVariable("id") UUID id) {
-        return vacationService.getVacationById(id);
+    private VacationOld getVacation (@PathVariable("id") UUID id) {
+        return vacationServiceOld.getVacationById(id);
     }
 
     @GetMapping("/vacations/user/{idUser}")
-    private List<Vacation> getAllVacationByUserId(@PathVariable("idUser") long idUser) {
-        return vacationService.getAllVacationByUserId(idUser);
+    private List<VacationOld> getAllVacationByUserId(@PathVariable("idUser") long idUser) {
+        return vacationServiceOld.getAllVacationByUserId(idUser);
     }
 }

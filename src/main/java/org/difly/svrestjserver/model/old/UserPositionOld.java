@@ -1,5 +1,5 @@
 package org.difly.svrestjserver.model.old;
 
-public enum UserPosition {
+public enum UserPositionOld {
     Admin, TeamLeader, AccountManager
 }

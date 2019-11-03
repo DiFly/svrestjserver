@@ -12,7 +12,7 @@ import java.util.UUID;
 @Table(name = "vacation")
 @Data
 @NoArgsConstructor
-public class Vacation {
+public class VacationOld {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;

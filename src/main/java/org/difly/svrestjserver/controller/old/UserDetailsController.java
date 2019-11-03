@@ -1,7 +1,7 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.old.UserDetails;
-import org.difly.svrestjserver.service.old.UserDetailsService;
+import org.difly.svrestjserver.model.old.UserDetailsOld;
+import org.difly.svrestjserver.service.old.UserDetailsServiceOld;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,26 +11,26 @@ import java.util.List;
 @RestController
 public class UserDetailsController {
     @Autowired
-    UserDetailsService userDetailsService;
+    UserDetailsServiceOld userDetailsServiceOld;
 
     @GetMapping("/user-details")
-    private List<UserDetails> getAllPersons() {
-        return userDetailsService.getAllUsersWithDetails();
+    private List<UserDetailsOld> getAllPersons() {
+        return userDetailsServiceOld.getAllUsersWithDetails();
     }
 
     @GetMapping("/user-details/{id}")
-    private UserDetails getPerson(@PathVariable("id") long id) {
-        return userDetailsService.getUserDetailsById(id);
+    private UserDetailsOld getPerson(@PathVariable("id") long id) {
+        return userDetailsServiceOld.getUserDetailsById(id);
     }
 
     @DeleteMapping("/user-details/{id}")
     private void deletePerson(@PathVariable("id") long id) {
-        userDetailsService.delete(id);
+        userDetailsServiceOld.delete(id);
     }
 
     @PostMapping("/user-details")
-    private long savePerson(@RequestBody UserDetails userDetails) {
-        userDetailsService.saveOrUpdate(userDetails);
-        return userDetails.getId();
+    private long savePerson(@RequestBody UserDetailsOld userDetailsOld) {
+        userDetailsServiceOld.saveOrUpdate(userDetailsOld);
+        return userDetailsOld.getId();
     }
 }
