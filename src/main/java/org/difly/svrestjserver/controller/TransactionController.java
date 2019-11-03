@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.UUID;
 
 @CrossOrigin
-@RestController("/api/Transaction")
+@RestController
+@RequestMapping("/api/Transaction")
 public class TransactionController {
 
     @GetMapping("/{id}")

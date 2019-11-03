@@ -11,14 +11,16 @@ import java.util.List;
 import java.util.UUID;
 
 @CrossOrigin
-@RestController("/api/Team")
+@RestController
+@RequestMapping("/api/Team")
 public class TeamController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public TeamModel teamGetMapping() {
         //ToDo return TeamModel list
-        return new TeamModel();
+//        return new TeamModel();
+        return null;
         //[
         //  {
         //    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",

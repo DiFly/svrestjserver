@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Table(name = "employee")
+@Table(name = "employee_of_vacation")
 @NoArgsConstructor
 public class EmployeeEntity {
     @Id

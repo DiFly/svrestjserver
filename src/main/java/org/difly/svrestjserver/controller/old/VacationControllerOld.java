@@ -13,7 +13,7 @@ import java.util.UUID;
 
 @CrossOrigin
 @RestController
-public class VacationController {
+public class VacationControllerOld {
     @Autowired
     VacationService vacationService;
 
