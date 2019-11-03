@@ -1,0 +1,69 @@
+package org.difly.svrestjserver.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.time.OffsetDateTime;
+import java.util.List;
+import java.util.UUID;
+
+/**
+ * EmployeeModel
+ */
+public class EmployeeModel {
+  @JsonProperty("id")
+  private UUID id = null;
+
+  @JsonProperty("firstName")
+  private String firstName = null;
+
+  @JsonProperty("surname")
+  private String surname = null;
+
+  @JsonProperty("avatar")
+  private String avatar = null;
+
+  @JsonProperty("birthdate")
+  private OffsetDateTime birthdate = null;
+
+  @JsonProperty("jobTitle")
+  private String jobTitle = null;
+
+  @JsonProperty("workEmail")
+  private String workEmail = null;
+
+  @JsonProperty("email")
+  private String email = null;
+
+  @JsonProperty("phone")
+  private String phone = null;
+
+  @JsonProperty("skype")
+  private String skype = null;
+
+  @JsonProperty("workStartDate")
+  private OffsetDateTime workStartDate = null;
+
+  @JsonProperty("isActive")
+  private Boolean isActive = null;
+
+  @JsonProperty("workEndDate")
+  private OffsetDateTime workEndDate = null;
+
+  @JsonProperty("deleted")
+  private Boolean deleted = null;
+
+  @JsonProperty("balance")
+  private Integer balance = null;
+
+  @JsonProperty("teamId")
+  private UUID teamId = null;
+
+  @JsonProperty("teams")
+  private List<TeamModel> teams = null;
+
+  public EmployeeModel id(UUID id) {
+    this.id = id;
+    return this;
+  }
+
+}

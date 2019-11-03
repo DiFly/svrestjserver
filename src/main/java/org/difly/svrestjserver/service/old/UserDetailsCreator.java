@@ -1,8 +1,8 @@
-package org.difly.svrestjserver.service;
+package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.UserDetails;
-import org.difly.svrestjserver.model.UserPosition;
-import org.difly.svrestjserver.model.UserStatus;
+import org.difly.svrestjserver.model.old.UserDetails;
+import org.difly.svrestjserver.model.old.UserPosition;
+import org.difly.svrestjserver.model.old.UserStatus;
 
 import java.time.LocalDate;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package org.difly.svrestjserver.model;
+package org.difly.svrestjserver.model.old;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

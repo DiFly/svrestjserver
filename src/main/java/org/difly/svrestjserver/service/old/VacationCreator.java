@@ -1,6 +1,6 @@
-package org.difly.svrestjserver.service;
+package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.Vacation;
+import org.difly.svrestjserver.model.old.Vacation;
 
 import java.time.LocalDate;
 import java.util.Random;

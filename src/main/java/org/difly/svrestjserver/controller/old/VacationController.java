@@ -1,7 +1,7 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.Vacation;
-import org.difly.svrestjserver.service.VacationService;
+import org.difly.svrestjserver.model.old.Vacation;
+import org.difly.svrestjserver.service.old.VacationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

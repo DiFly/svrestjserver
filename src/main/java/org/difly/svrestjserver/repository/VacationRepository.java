@@ -1,6 +1,6 @@
 package org.difly.svrestjserver.repository;
 
-import org.difly.svrestjserver.model.Vacation;
+import org.difly.svrestjserver.model.old.Vacation;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

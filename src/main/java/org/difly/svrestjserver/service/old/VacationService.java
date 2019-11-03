@@ -1,6 +1,6 @@
-package org.difly.svrestjserver.service;
+package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.Vacation;
+import org.difly.svrestjserver.model.old.Vacation;
 import org.difly.svrestjserver.repository.VacationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -8,9 +8,9 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 /**
- * Vacation
+ * VacationModel
  */
-public class Vacation {
+public class VacationModel {
   @JsonProperty("id")
   private UUID id = null;
 
@@ -31,29 +31,6 @@ public class Vacation {
 
   @JsonProperty("approverId")
   private UUID approverId = null;
-
-  @JsonProperty("status")
-  private StatusEnum status = null;
-
-  @JsonProperty("statusChangeDate")
-  private OffsetDateTime statusChangeDate = null;
-
-  @JsonProperty("createDateTime")
-  private OffsetDateTime createDateTime = null;
-
-  @JsonProperty("deleted")
-  private Boolean deleted = null;
-
-  @JsonProperty("employee")
-  private Employee employee = null;
-
-  @JsonProperty("approver")
-  private Employee approver = null;
-
-  public Vacation id(UUID id) {
-    this.id = id;
-    return this;
-  }
 
   /**
    * Gets or Sets status
@@ -87,7 +64,26 @@ public class Vacation {
       return null;
     }
 
+  }  @JsonProperty("status")
+  private StatusEnum status = null;
+
+  @JsonProperty("statusChangeDate")
+  private OffsetDateTime statusChangeDate = null;
+
+  @JsonProperty("createDateTime")
+  private OffsetDateTime createDateTime = null;
+
+  @JsonProperty("deleted")
+  private Boolean deleted = null;
+
+  @JsonProperty("employee")
+  private EmployeeModel employee = null;
+
+  @JsonProperty("approver")
+  private EmployeeModel approver = null;
+
+  public VacationModel id(UUID id) {
+    this.id = id;
+    return this;
   }
 }
-
-

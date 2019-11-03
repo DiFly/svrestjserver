@@ -1,13 +1,13 @@
 package org.difly.svrestjserver.component;
 
-import org.difly.svrestjserver.model.User;
-import org.difly.svrestjserver.model.UserDetails;
-import org.difly.svrestjserver.model.Vacation;
+import org.difly.svrestjserver.model.old.User;
+import org.difly.svrestjserver.model.old.UserDetails;
+import org.difly.svrestjserver.model.old.Vacation;
 import org.difly.svrestjserver.repository.UserDetailsRepository;
 import org.difly.svrestjserver.repository.UserRepository;
 import org.difly.svrestjserver.repository.VacationRepository;
-import org.difly.svrestjserver.service.UserDetailsCreator;
-import org.difly.svrestjserver.service.VacationCreator;
+import org.difly.svrestjserver.service.old.UserDetailsCreator;
+import org.difly.svrestjserver.service.old.VacationCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

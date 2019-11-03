@@ -1,6 +1,6 @@
-package org.difly.svrestjserver.service;
+package org.difly.svrestjserver.service.old;
 
-import org.difly.svrestjserver.model.UserDetails;
+import org.difly.svrestjserver.model.old.UserDetails;
 import org.difly.svrestjserver.repository.UserDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

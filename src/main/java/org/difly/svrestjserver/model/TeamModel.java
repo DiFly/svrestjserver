@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Team
+ * TeamModel
  */
-public class Team {
+public class TeamModel {
   @JsonProperty("id")
   private UUID id = null;
 
@@ -21,13 +21,16 @@ public class Team {
   @JsonProperty("deleted")
   private Boolean deleted = null;
 
-  @JsonProperty("employeeTeams")
-  private List<EmployeeTeam> employeeTeams = null;
+  @JsonProperty("teamLeadName")
+  private String teamLeadName = null;
 
-  @JsonProperty("teamLead")
-  private Employee teamLead = null;
+  @JsonProperty("employeeCount")
+  private Integer employeeCount = null;
 
-  public Team id(UUID id) {
+  @JsonProperty("employees")
+  private List<EmployeeModel> employees = null;
+
+  public TeamModel id(UUID id) {
     this.id = id;
     return this;
   }

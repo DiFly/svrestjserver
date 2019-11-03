@@ -1,8 +1,8 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.UserDetails;
+import org.difly.svrestjserver.model.old.UserDetails;
 import org.difly.svrestjserver.model.custom.AvailableDays;
-import org.difly.svrestjserver.service.UserDetailsService;
+import org.difly.svrestjserver.service.old.UserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package org.difly.svrestjserver.controller.old;
 
-import org.difly.svrestjserver.model.User;
+import org.difly.svrestjserver.model.old.User;
 import org.difly.svrestjserver.repository.UserRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
