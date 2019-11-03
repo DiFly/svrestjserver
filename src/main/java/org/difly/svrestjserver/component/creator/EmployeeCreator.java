@@ -8,15 +8,15 @@ import java.util.Random;
 public class EmployeeCreator {
     public EmployeeEntity getNewEmployee() {
         EmployeeEntity employee = new EmployeeEntity();
+        employee.setFirstName(firstname());
+        employee.setSurname(surname());
+        employee.setJobTitle(userRole().toString());
         employee.setAvatar();
         employee.setBalance();
         employee.setBirthdate();
         employee.setDeleted();
         employee.setEmail();
-        employee.setFirstName(firstname());
-        employee.setSurname(surname());
         employee.setIsActive();
-        employee.setJobTitle();
         employee.setPhone();
         employee.setRole();
         employee.setSkype();
@@ -24,7 +24,6 @@ public class EmployeeCreator {
         employee.setWorkEmail();
         employee.setWorkEndDate();
         employee.setWorkStartDate();
-        employee.setRole();
 
         return employee;
     }
@@ -49,7 +48,7 @@ public class EmployeeCreator {
         return str;
     }
 
-    private Role userPosition () {
+    private Role userRole () {
         int x = new Random().nextInt(Role.values().length);
         switch (x) {
             case 0:
