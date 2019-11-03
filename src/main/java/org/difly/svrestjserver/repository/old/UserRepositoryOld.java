@@ -1,4 +1,4 @@
-package org.difly.svrestjserver.repository;
+package org.difly.svrestjserver.repository.old;
 
 import org.difly.svrestjserver.model.old.UserOld;
 import org.springframework.data.jpa.repository.JpaRepository;

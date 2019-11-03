@@ -2,8 +2,8 @@ package org.difly.svrestjserver.component;
 
 import org.difly.svrestjserver.model.old.UserDetailsOld;
 import org.difly.svrestjserver.model.old.VacationOld;
-import org.difly.svrestjserver.repository.UserDetailsRepositoryOld;
-import org.difly.svrestjserver.repository.VacationRepositoryOld;
+import org.difly.svrestjserver.repository.old.UserDetailsRepositoryOld;
+import org.difly.svrestjserver.repository.old.VacationRepositoryOld;
 import org.difly.svrestjserver.service.old.UserDetailsCreatorOld;
 import org.difly.svrestjserver.service.old.VacationCreatorOld;
 import org.springframework.beans.factory.annotation.Autowired;
