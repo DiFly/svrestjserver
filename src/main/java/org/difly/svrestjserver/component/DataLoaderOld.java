@@ -30,7 +30,7 @@ public class DataLoaderOld {
     private void loadUserDetails() {
         UserDetailsCreatorOld creator = new UserDetailsCreatorOld();
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 25; i++) {
             UserDetailsOld user = creator.getUserDetails();
             userDetailsRepositoryOld.save(user);
         }
@@ -42,7 +42,7 @@ public class DataLoaderOld {
         VacationCreatorOld creator = new VacationCreatorOld();
         Random r = new Random();
 
-        for (int x = 4; x < 105; x++) {
+        for (int x = 1; x < 20; x++) {
             int c = r.nextInt(20)+1;
 
             for (int y = 0; y < c; y++) {
